@@ -64,7 +64,7 @@ if (options.watch) {
       },
       {
         // Added specific React script to prevent infinite loop from js output
-        match: ['./site/js/*.js', './examples/react/script.js'],
+        match: ['./site/js/*.js'],
         fn: function watchTask() {
           // shell.exec is synchronous
           shell.exec('npm run build:js');
